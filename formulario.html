@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">    
+    <title>Formulario</title>
+    <style>
+        form {
+            width: 50%;
+            margin: 0 auto;
+            font: 15px Tahoma;
+        }
+        label, input, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input, textarea {
+            border-radius: 3px;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="mailto:circusdigital.net@gmail.com" method="post">
+
+        <fieldset>
+            <legend>Formulario de contacto</legend>
+
+            <label>
+                Nombre:
+                <input type="text" name="nombre" required>
+            </label>
+
+            <label>
+                Apellido:
+                <input type="text" name="apellido">
+            </label>
+
+            <label>
+                E-mail:
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Tu mensaje:
+                <textarea name="consulta" cols="30" rows="10"></textarea>
+            </label>
+
+            <input type="submit" value="Enviar el formulario">
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
